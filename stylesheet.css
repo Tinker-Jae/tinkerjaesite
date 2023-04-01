@@ -71,12 +71,15 @@
   width: 100%;
   height: 400px;
 }
-.PostBlock{
-  list-style-type: "\2010";
-  margin-top: 10px;
-  margin-left: 15px;
-  margin-bottom: 10px;
-  font-size: 250%;
+.PostsBlock{
+  margin: 10px 15px;
+}
+.PostPictures{
+  margin: auto auto;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 28px;
 }
 @media only screen and (max-width: 650px) {
   .MainBox{
