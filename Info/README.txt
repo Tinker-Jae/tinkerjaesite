@@ -11,3 +11,4 @@ Features to work on:
 - web ring/connecting with others (COMMUNITY!!!!)
 - commenting your code
 - Post more lol
+- also make it easier to add/make posts.
