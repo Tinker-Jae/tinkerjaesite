@@ -121,7 +121,7 @@
     margin-left: 20%;
   }
   .LeftBox{
-    width: calc(fit-content+500px);
+    width: 14%;
     height: fit-content;
     display: flex;
     flex-flow: column nowrap;
