@@ -18,6 +18,7 @@
     }
     hr{
       border: 1.5px solid white;
+      width: 100%;
     }
     h1{
       font-size: 350%;
@@ -44,13 +45,13 @@
 .SiteTitle{
   text-align: center;
   margin: .5% auto;
+  margin-left: 0%;
   font-size: 450%; 
   font-family: "Panic";
   color: white;
 }
-.MainBox{
-  margin: auto;
-  line-height: 225%;
+.ContainerBox{
+  display: flex;
 }
 .Navbar{
   display: flex;
@@ -82,22 +83,58 @@
   text-align: center;
   font-size: 28px;
 }
+/* This is for mobile/smaller screens */
 @media only screen and (max-width: 650px) {
-  .MainBox{
-    width: 97%;
-    min-width: none;
-    max-width: 634px;
+  .ContainerBox{
+    justify-content: center;
+    gap: 2.5%;
+    width: 60%;
+    margin: auto;
+    margin-left: 21%;
+  }
+  .LeftBox{
+    float: left;
+    width: 100%;
+  }
+  .MidBox{
+    float: right;
+    line-height: 225%;
+    width: 100%;
+  }
+  .RightBox{
+    float: right;
+    width: 100%;
   }
   .AboutMe{
     flex-direction: column;
     align-items: center;
   }
 }
+/* This is for laptops/desktops */
 @media only screen and (min-width: 651px) {
-  .MainBox{
-    width: 40%;
-    min-width: 615px;
-    max-width: 964px;
+  .ContainerBox{
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 2.5%;
+    width: 60%;
+    margin: auto;
+    margin-left: 20%;
+  }
+  .LeftBox{
+    width: calc(fit-content+500px);
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    font-size: 90%;
+  }
+  .MidBox{
+    line-height: 225%;
+    width: 65%;
+  }
+  .RightBox{
+    width: 15%;
+    height: fit-content;
   }
   .AboutMe{
     flex-direction: row;
