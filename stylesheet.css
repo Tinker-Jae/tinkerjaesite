@@ -17,7 +17,7 @@
       color: turquoise;
     }
     hr{
-      border: 1.5px solid white;
+      border: 1.75px solid white;
       width: 100%;
     }
     h1{
@@ -38,8 +38,8 @@
   border-color: #ff69b4;
 }
 .Border{
-  border: 5px;
-  border-radius: 5px;
+  border: 4px;
+  border-radius: 15px;
   border-style: solid;
 }
 .SiteTitle{
@@ -121,12 +121,12 @@
     margin-left: 20%;
   }
   .LeftBox{
-    width: 14%;
+    width: 13%; 
     height: fit-content;
+    padding: -50px 0%;
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
-    font-size: 90%;
   }
   .MidBox{
     line-height: 225%;
