@@ -123,10 +123,10 @@
   .LeftBox{
     width: 13%; 
     height: fit-content;
-    padding: -50px 0%;
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
+    gap: 15px;
   }
   .MidBox{
     line-height: 225%;
@@ -143,10 +143,8 @@
     margin-left: 20px;
   }
   .AboutMePic{
-    order: 1;
-    margin: 0%;
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 96%;
+    max-height: 96%;
   }
   .AboutMeText{
     order: 2;
