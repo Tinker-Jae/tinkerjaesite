@@ -50,17 +50,6 @@
   font-family: "Panic";
   color: white;
 }
-.ContainerBox{
-  display: flex;
-}
-.Navbar{
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-}
 .BlinkiesBlock{
   display: flex;
   flex-flow: row wrap;
@@ -109,6 +98,7 @@
 /* This is for laptops/desktops */
 @media only screen and (min-width: 651px) {
   .ContainerBox{
+    display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     gap: 2.5%;
