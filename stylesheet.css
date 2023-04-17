@@ -104,7 +104,6 @@
     gap: 2.5%;
     width: 60%;
     margin: auto;
-    margin-left: 20%;
   }
   .LeftBox{
     width: 13%; 
@@ -123,7 +122,7 @@
   .RightBox{
     width: 15%;
     height: fit-content;
-    display: none;
+
   }
   .NavbarMobile{
     display: none;
