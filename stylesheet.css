@@ -61,10 +61,6 @@
   margin: 0%;
   padding: 0%;
 }
-.AboutMe{
-  display: flex;
-  margin-bottom: 20px;
-}
 .BlinkiesBlock{
   display: flex;
   flex-flow: row wrap;
@@ -86,28 +82,28 @@
 /* This is for mobile/smaller screens */
 @media only screen and (max-width: 650px) {
   .ContainerBox{
-    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     gap: 2.5%;
-    width: 60%;
+    width: 90%;
     margin: auto;
-    margin-left: 21%;
   }
   .LeftBox{
-    float: left;
-    width: 100%;
+    display: none;
+  }
+  .NavbarMobile{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
   .MidBox{
-    float: right;
     line-height: 225%;
     width: 100%;
   }
   .RightBox{
-    float: right;
     width: 100%;
-  }
-  .AboutMe{
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
 }
 /* This is for laptops/desktops */
@@ -122,34 +118,28 @@
   }
   .LeftBox{
     width: 13%; 
+    min-width: 95px;
     height: fit-content;
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
-    gap: 15px;
+    gap: 20px;
   }
   .MidBox{
     line-height: 225%;
     width: 65%;
+    min-width: 400px;
   }
   .RightBox{
     width: 15%;
     height: fit-content;
+    display: none;
   }
-  .AboutMe{
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 9px;
-    margin-left: 20px;
+  .NavbarMobile{
+    display: none;
   }
-  .AboutMePic{
+  .ProfPic{
     max-width: 96%;
     max-height: 96%;
   }
-  .AboutMeText{
-    order: 2;
-    margin: 0%;
-    width: 100%;
-    max-width: 365px;
-  } 
 }
