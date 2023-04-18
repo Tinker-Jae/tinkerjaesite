@@ -28,7 +28,7 @@ var SiteTitleHTML = 'Tinker Jae'
 document.getElementById("SiteTitle").innerHTML = SiteTitleHTML;
 
 // This links the Navbar on your mobile page to the NavbarMobile Variable
-document.getElementById("NavbarDesktop").innerHTML = NavbarMobileHTML; 
+document.getElementById("NavbarMobile").innerHTML = NavbarMobileHTML; 
 
 // This links the Navbar on your desktop page to the NavbarDesktop Variable
 document.getElementById("NavbarDesktop").innerHTML = NavbarDesktopHTML; 
