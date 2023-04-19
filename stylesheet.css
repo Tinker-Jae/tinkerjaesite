@@ -92,7 +92,6 @@
   }
   .RightBox{
     width: 100%;
-    display: none;
   }
 }
 /* This is for laptops/desktops */
@@ -101,12 +100,14 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    gap: 2.5%;
-    width: 60%;
     margin: auto;
+    margin-left: 22.5%;
+    gap: 5%;
+    width: 45%;
+
   }
   .LeftBox{
-    width: 13%; 
+    width: 18%; 
     min-width: 95px;
     height: fit-content;
     display: flex;
@@ -116,13 +117,12 @@
   }
   .MidBox{
     line-height: 225%;
-    width: 65%;
+    width: 77%;
     min-width: 400px;
   }
   .RightBox{
     width: 15%;
     height: fit-content;
-
   }
   .NavbarMobile{
     display: none;
