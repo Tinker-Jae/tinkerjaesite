@@ -101,13 +101,12 @@
     flex-flow: row nowrap;
     justify-content: center;
     margin: auto;
-    margin-left: 22.5%;
-    gap: 5%;
-    width: 45%;
+    gap: 3%;
+    width: 70%;
 
   }
   .LeftBox{
-    width: 18%; 
+    width: 11%; 
     min-width: 95px;
     height: fit-content;
     display: flex;
@@ -117,11 +116,11 @@
   }
   .MidBox{
     line-height: 225%;
-    width: 77%;
+    width: 72%;
     min-width: 400px;
   }
   .RightBox{
-    width: 15%;
+    width: 11%;
     height: fit-content;
   }
   .NavbarMobile{

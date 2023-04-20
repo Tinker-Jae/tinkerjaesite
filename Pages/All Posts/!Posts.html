@@ -4,12 +4,12 @@
 <!--meta stuff-->
 		<style>
 			@font-face {
-  				font-family: 'NovaMono';
-  				src: url(https://tinkerjae.neocities.org/Attachments/Fonts/webfontkit-20220926-181727/novamono-webfont.woff);
+					font-family: 'NovaMono';
+					src: url(https://tinkerjae.neocities.org/Attachments/Fonts/webfontkit-20220926-181727/novamono-webfont.woff);
 			}
 			@font-face {
-  				font-family: 'Panic';
-  				src: url(https://tinkerjae.neocities.org/Attachments/Fonts/webfontkit-20220926-181727/panic-webfont.woff);
+					font-family: 'Panic';
+					src: url(https://tinkerjae.neocities.org/Attachments/Fonts/webfontkit-20220926-181727/panic-webfont.woff);
 			}
 		</style>
 		<meta charset="utf-8">
@@ -23,21 +23,24 @@
 <body>
 
 	<h1 class="SiteTitle" id="SiteTitle"></h1>
+<!-- this is the main container, it contains everything but the title. -->
+<section class="ContainerBox">
+	<!-- this is left box, it doesn't exist on mobile, but it does for desktop. It contains a little prof pic and the navbar for desktop.-->
+	<section class="LeftBox">
+		<img class="ProfPic Border" src="/Attachments/profpic.png">
+		<div class="NavbarDesktop Border" id="NavbarDesktop"></div>
+	</section>
 
-	<section class="MainBox Border">
+	<!-- this is where all the main content is stored, alongside the Mobile Navbar. -->
+	<section class="MidBox Border">
+		<!-- this is the navbar for mobile -->
+		<div class="NavbarMobile" id="NavbarMobile"></div>
+		<hr class="NavbarMobile">
 
-		<p class="Navbar" id="Navbar">
-		</p>
-		<hr>
-
+		<!-- this is the main content stuff. -->
 		<h1><u>Posts</u></h1>
-
 		<p class="PostsBlock"> 
-
 		<!--PLACE NEW POSTS HERE-->
-
-
-
 		- <a href="/Pages/All Posts/CategoryTesting4-6-23.html">Category Testing Ground</a><br>
 		&nbsp;   Testing site for categories.<br>
 		&nbsp;   04/06/2023<br>	
@@ -64,10 +67,19 @@
 
 		</p>
 
+
 	</section>
+
+	<!--	this is another box basically, it'll either be on the right or on the bottom depending on mobile or desktop. 
+	<section class="RightBox Border">
+		<p>
+			balls 3
+		</p>
+	</section>
+	-->
+</section>
 
 	<script src="/scripts.js">
 	</script>
-
 </body>	
 </html>
