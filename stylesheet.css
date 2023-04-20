@@ -106,7 +106,7 @@
 
   }
   .LeftBox{
-    width: 11%; 
+    width: 15%; 
     min-width: 95px;
     height: fit-content;
     display: flex;
@@ -116,11 +116,11 @@
   }
   .MidBox{
     line-height: 225%;
-    width: 72%;
+    width: 64%;
     min-width: 400px;
   }
   .RightBox{
-    width: 11%;
+    width: 15%;
     height: fit-content;
   }
   .NavbarMobile{
