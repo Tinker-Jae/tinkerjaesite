@@ -43,12 +43,18 @@
   border-style: solid;
 }
 .SiteTitle{
+  width: fit-content;
   text-align: center;
   margin: .5% auto;
-  margin-left: 0%;
   font-size: 450%; 
   font-family: "Panic";
   color: white;
+  text-decoration: none;
+}
+.SiteTitleLink{
+  width: min-content;
+  color: white;
+  text-decoration: none;
 }
 .BlinkiesBlock{
   display: flex;
@@ -62,9 +68,10 @@
   margin: 10px 15px;
 }
 .PostImageBlock{
-  margin: auto auto;
-  margin-top: 8%;
-  margin-bottom: 5%;
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
   text-align: center;
   font-size: 28px;
 }
@@ -102,11 +109,11 @@
     justify-content: center;
     margin: auto;
     gap: 3%;
-    width: 70%;
+    width: 75%;
 
   }
   .LeftBox{
-    width: 15%; 
+    width: 17%; 
     min-width: 95px;
     height: fit-content;
     display: flex;
@@ -116,12 +123,11 @@
   }
   .MidBox{
     line-height: 225%;
-    width: 64%;
+    width: 60%;
     min-width: 400px;
   }
   .RightBox{
-    width: 15%;
-    height: fit-content;
+    width: 17%;
   }
   .NavbarMobile{
     display: none;

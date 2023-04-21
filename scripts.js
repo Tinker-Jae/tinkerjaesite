@@ -22,7 +22,7 @@ var NavbarDesktopHTML = '<h1><a href="/">Home</a></h1><hr> <h1><a href="/Pages/A
 
 
 // this line controls the site title
-var SiteTitleHTML = 'Tinker Jae'
+var SiteTitleHTML = '<a href="/" class="SiteTitleLink">Tinker Jae</a>'
 
 // This links the site title on your page to the SiteTitle Variable
 document.getElementById("SiteTitle").innerHTML = SiteTitleHTML;
