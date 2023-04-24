@@ -21,8 +21,9 @@
 		<link rel="stylesheet" href="/stylesheet.css">
 	</head>
 <body>
-
 	<h1 class="SiteTitle" id="SiteTitle"></h1>
+
+
 <!-- this is the main container, it contains everything but the title. -->
 <section class="ContainerBox">
 	<!-- this is left box, it doesn't exist on mobile, but it does for desktop. It contains a little prof pic and the navbar for desktop.-->
@@ -47,43 +48,54 @@
 		</p>
 		<hr>
 
-		<h1><u>Welcome!</u></h1>
-		<p>Hi welcome to my website!</p>
-		<p>I'm Jae and I run this blog, I like tinkering with stuff so there you go. 
-			The layout is still a bit of a work in progress but it's been going well so far.
-			My website is about cool stuff. A little bit of me is sprinkled in, but overall it's supposed to be about things that r cool.
-			My "Thesis", I guess, is that the main point of the site is to display, discuss, and provide info on, Cool Stuff.
-		</p>
+		<h1><u>Blinkies!</u></h1>
+		<div class="Marquee" id="Marquee"></div>
 	</section>
 
 	<!--	this is another box basically, it'll either be on the right or on the bottom depending on mobile or desktop.  -->
 
-	<section class="RightBox Border">
-	<!--WEBAMP-->
-	<!--
-	<div id="app"></div>
-	<script src="https://unpkg.com/webamp"></script>
-	<script>new Webamp({
-		initialTracks: [{
-			metaData: {
-				artist: "QOTSA",
-				title: "Tension Head",
-			},
-		
-		// Be careful because mp3s use up a lot of space on your account.
-			url: "https://files.catbox.moe/284e5f.mp3",
-		}],
-		
-		initialSkin: {
-			url: 
-		// Find skins https://skins.webamp.org - download them and host them on your website!
-		"https://files.catbox.moe/5itgfe.wsz"
-		},}).renderWhenReady(app);</script>
-	-->
-	</section>
+	<section class="RightBox Border" id="RightBox"></section>
 
-	
 </section>
+
+<!--WEBAMP-->
+<!--
+<div id="app"></div>
+<script src="https://unpkg.com/webamp"></script>
+<script>new Webamp({
+	initialTracks: [{
+		metaData: {
+			artist: "QOTSA",
+			title: "Tension Head",
+		},
+	
+	// Be careful because mp3s use up a lot of space on your account.
+		url: "https://files.catbox.moe/284e5f.mp3",
+	}],
+	
+	initialSkin: {
+		url: 
+	// Find skins https://skins.webamp.org - download them and host them on your website!
+	"https://files.catbox.moe/5itgfe.wsz"
+	},}).renderWhenReady(app);</script>
+-->
+<!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
+<div class="debug">
+	<!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
+	<div class="debug" id="RecentPosts"></div>
+	<div class="debug" id="AllPosts"></div>
+	<div class="debug" id="BlogPosts"></div>
+	<div class="debug" id="ShrinePosts"></div>
+	<div class="debug" id="ProjectPosts"></div>
+	<div class="debug" id="LibraryPosts"></div>
+	<div class="debug" id="MiscPosts"></div>
+	<div class="debug" id="Marquee"></div>
+	<div class="debug" id="SiteTitle"></div>
+	<div class="debug" id="NavbarMobile"></div>
+	<div class="debug" id="NavbarDesktop"></div>
+	<!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
+</div>
+<!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
 
 	<script src="/scripts.js">
 	</script>

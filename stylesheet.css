@@ -26,12 +26,23 @@
       margin: 2%;
       padding: 0% 1.1%;
     }
+    /* h3 is reserved for navbar elements*/
+    h3{
+      font-size: 310%;
+      margin: 0px;
+      padding: 0px;
+      font-weight: 300;
+    }
+    /* h3 is reserved for navbar elements*/
     p{
       font-size: 250%;
       margin: 2%;
       padding: 0% 1.1%;
       text-align: justify;
     }
+.debug{
+  display: none;
+}
 .marker{
   border: 7px;
   border-style: solid;
@@ -75,6 +86,69 @@
   text-align: center;
   font-size: 28px;
 }
+.RecentPostThing{
+  margin-top: -5%;
+  margin-bottom: 11%;
+  text-align: left;
+}
+.RecentPostThing p{
+  text-align: left;
+  margin-bottom: -2%;
+  line-height: 90%;
+}
+.RecentPostThing a{
+  margin: -10% 0%;
+}
+.Marquee {
+  margin: 5% auto;
+  width: 97%;
+  overflow: hidden;
+  white-space: normal;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.Marquee div {
+  min-width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: fit-content;
+  -moz-animation: scroll-left 40s linear infinite;
+  -webkit-animation: scroll-left 40s linear infinite;
+  animation: scroll-left 40s linear infinite;
+}
+.Marquee img {
+  margin: 0%;
+  min-width: max-content;
+}
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(650%);
+      -webkit-transform: translateX(650%);
+      transform: translateX(900%);
+  }
+  100% {
+      -moz-transform: translateX(-600%);
+      -webkit-transform: translateX(-600%);
+      transform: translateX(-700%);
+  }
+}
+/* 
+NOTE:
+If adding or removing blinkies you MUST recalibrate 0 and 100 for keyframe scroll-left
+to change time, change the seconds in animations under .marquee div
+if you want to change to wrapped blinkies, change flex flow to nowrap.
+*/
+/*
+.NavElement{
+  font-size: 250%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+*/
 /* This is for mobile/smaller screens */
 @media only screen and (max-width: 650px) {
   .ContainerBox{
@@ -125,9 +199,11 @@
     line-height: 225%;
     width: 60%;
     min-width: 400px;
+    height: fit-content;
   }
   .RightBox{
-    width: 17%;
+    width: 19%;
+    height: fit-content;
   }
   .NavbarMobile{
     display: none;
