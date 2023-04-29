@@ -101,7 +101,7 @@
 }
 .Marquee {
   margin: 5% auto;
-  width: 97%;
+  width: 100%;
   overflow: hidden;
   white-space: normal;
   position: relative;
@@ -124,13 +124,13 @@
 }
 @keyframes scroll-left {
   0% {
-      -moz-transform: translateX(650%);
-      -webkit-transform: translateX(650%);
+      -moz-transform: translateX(900%);
+      -webkit-transform: translateX(900%);
       transform: translateX(900%);
   }
   100% {
-      -moz-transform: translateX(-600%);
-      -webkit-transform: translateX(-600%);
+      -moz-transform: translateX(-700%);
+      -webkit-transform: translateX(-700%);
       transform: translateX(-700%);
   }
 }

@@ -42,11 +42,13 @@ var MarqueeHTML = '<div><img src="/Attachments/Blinkies/0142-virusgender.gif"></
 */
 
 // Code for the RightBox since it's the same on all pages.
-var RightBoxHTML = '<h1><u>Pic of the Day</u></h1> <img class="PostImageBlock" src="https://files.catbox.moe/3q7hvi.jpg"> <h1><u>Recent Posts</u></h1> <div class="RecentPostThing" id="RecentPosts"></div>';
+var RightBoxHTML = '<h1><u>Pic of the Day</u></h1> <div class="PostImageBlock"><a href="https://twitter.com/hitsujigoods/status/1605248664158486536?s=20"><img src="https://files.catbox.moe/3q7hvi.jpg"></a></div> <h1><u>Recent Posts</u></h1> <div class="RecentPostThing" id="RecentPosts"></div>';
 /*
-	<h1><u>Pic of the Day</u></h1> 
-    <img class="PostImageBlock" src="https://files.catbox.moe/3q7hvi.jpg"> 
-    <h1><u>Recent Posts</u></h1> 
+	<h1><u>Pic of the Day</u></h1>
+    <div class="PostImageBlock">
+    <a href="https://twitter.com/hitsujigoods/status/1605248664158486536?s=20"><img src="https://files.catbox.moe/3q7hvi.jpg"></a>
+    </div>
+    <h1><u>Recent Posts</u></h1>
     <div class="RecentPostThing" id="RecentPosts"></div>
 */
 
@@ -79,8 +81,6 @@ var postsArray = [
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
-
-
 
 // this adds tags to make our post readable.
 // it takes the data from postsArray, and adds it to the post template that appears on each page.
