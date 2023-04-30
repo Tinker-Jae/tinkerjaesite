@@ -1,21 +1,20 @@
 // This controls the Navbar for Mobile Screens
-var NavbarMobileHTML = '<h3><a href="/">Home</a></h3> <h3><a href="/Pages/All Posts/!Posts.html">Posts</a></h3> <h3><a href="/Pages/Misc/!misc.html">Misc</a></h3>';
+var NavbarMobileHTML = '<h3><a href="/">Home</a></h3> <h3><a href="/Pages/All Posts/!Posts.html">Shrines</a></h3>  <h3><a href="/Pages/All Posts/!Posts.html">Blog</a></h3> <h3><a href="/Pages/Misc/!misc.html">Misc</a></h3>';
 // Here's the code for NavbarMobile
 /* 
 <h3><a href="/">Home</a></h3>
-<h3><a href="/Pages/All Posts/!Posts.html">Posts</a></h3>
+<h3><a href="/Pages/All Posts/!Posts.html">Shrines</a></h3> 
+<h3><a href="/Pages/All Posts/!Posts.html">Blog</a></h3>
 <h3><a href="/Pages/Misc/!misc.html">Misc</a></h3>
 */
 
 
 // This controls the Navbar for Desktop Screens
-var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr> <h3><a href="/Pages/All Posts/!Posts.html">Shrines</a></h3><hr> <h3><a href="/Pages/All Posts/!Posts.html">Projects</a></h3><hr> <h3><a href="/Pages/All Posts/!Posts.html">Library</a></h3><hr><h3><a href="/Pages/All Posts/!Posts.html">Blog</a></h3><hr><h3><a href="/Pages/Misc/!misc.html">Misc</a></h3>';
+var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr> <h3><a href="/Pages/All Posts/!Posts.html">Shrines</a></h3><hr> <h3><a href="/Pages/All Posts/!Posts.html">Blog</a></h3><hr> <h3><a href="/Pages/Misc/!misc.html">Misc</a></h3>';
 // Here's the code for NavbarDesktop
 /*
 <h3><a href="/">Home</a></h3><hr> 
 <h3><a href="/Pages/All Posts/!Posts.html">Shrines</a></h3><hr> 
-<h3><a href="/Pages/All Posts/!Posts.html">Projects</a></h3><hr> 
-<h3><a href="/Pages/All Posts/!Posts.html">Library</a></h3><hr>
 <h3><a href="/Pages/All Posts/!Posts.html">Blog</a></h3><hr>
 <h3><a href="/Pages/Misc/!misc.html">Misc</a></h3>
 */
