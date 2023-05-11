@@ -27,10 +27,7 @@
 <!-- this is the main container, it contains everything but the title. -->
 <section class="ContainerBox">
 	<!-- this is left box, it doesn't exist on mobile, but it does for desktop. It contains a little prof pic and the navbar for desktop.-->
-	<section class="LeftBox">
-		<img class="ProfPic Border" src="/Attachments/profpic.png">
-		<div class="NavbarDesktop Border" id="NavbarDesktop"></div>
-	</section>
+	<section class="LeftBox" id="LeftBox"></section>
 
 	<!-- this is where all the main content is stored, alongside the Mobile Navbar. -->
 	<section class="MidBox Border">
@@ -40,65 +37,72 @@
 
 		<!-- this is the main content stuff. -->
 		<h1><u>Welcome!</u></h1>
-		<p>Hi welcome to my website!</p>
-		<p>I'm Jae and I run this blog, I like tinkering with stuff so there you go. 
-			The layout is still a bit of a work in progress but it's been going well so far.
-			My website is about cool stuff. A little bit of me is sprinkled in, but overall it's supposed to be about things that r cool.
-			My "Thesis", I guess, is that the main point of the site is to display, discuss, and provide info on, Cool Stuff.
+		<p>
+			Hello and welcome to Tinker Jae!<br> 
+			This is my blog/website where I post stuff about my life, stuff I like, and stuff I'm working on or have worked on.
+			I've made this site to try and get away from modern social media and to have my own place on the internet. If you want to know more, check out my manifesto.
+			If you're trying to find something specific, you'd be best checking out the sitemap below.
+			I hope you enjoy the site, and thank you for stopping by!
 		</p>
 		<hr>
 
-		<h1><u>Blinkies!</u></h1>
-		<div class="Marquee" id="Marquee"></div>
+		<h1><u>Sitemap</u></h1>
+		<p>
+			<a href="/Pages/!Projects.html">Projects:</a> Projects! It's stuff I'm working on, resources, how to guides, and more.<br>
+			<a href="/Pages/!Articles.html">Articles:</a> Games, movies, shows, art. If I like it, I probably have something to say about it, and you can find what I have to say here.<br>
+			<a href="/Pages/!Journal.html">Journal:</a> Posts about my life and stuff. General updates on how things are going as well as thoughts that I have.<br>
+			<a href="/Pages/!Writings.html">Writings:</a> Creative writings go here. Poems, lyrics, stories, and maybe general music writing, like melodies and stuff.<br>
+			<a href="/Pages/!Misc.html">Misc:</a> The junk drawer of my site. Stuff that doesn't have a place anywhere else goes here.<br>
+		</p>
 		<hr>
+
+		<h1><u>Abt the Webmaster</u></h1>
+		<div class="AbtMeMini">
+			<img class="AbtMeMiniImg Border" src="/Attachments/profpic.png">
+			<p class="AbtMeMiniText">
+				Hi! I'm Jae and I am the Webmaster for this blog. I'm a college student studying engineering who's really into art, tech, 
+				guns, cartoons, working out, music, and a bunch of other stuff.
+				I'm a big fan of Adventure Time and She-Ra, and am into bands like KGLW.
+				I hope not to be too political on here, but I'm Pro-2A, Pro-Choice, and Pro-LGBTQ, if you're not really into
+				all of that then viewer discretion is advised.
+				My Pronouns are He/They/It.
+			</p>
+		</div>
+		<hr>
+
+		<h1><u>Links/Contact Me</u></h1>
+		<div class="ContactMini">
+			<p class="ContactMiniList">
+				- <a href="https://www.youtube.com/channel/UCtZMU5VA0PxEelEqq2Aq46Q">Youtube</a><br>
+				- <a href="https://neocities.org/site/tinkerjae">Neocities</a><br>
+				- <a href="https://github.com/Tinker-Jae/tinkerjaesite">Github</a><br>
+				- <a href="mailto:tinkerjaesite@proton.me">Email</a><br>
+				- <a href="http://users.smartgb.com/g/g.php?a=s&i=g19-00633-9f">Guestbook</a><br>
+			</p>
+			<p class="ContactMiniText">
+				If you'd like to check out my other stuff, visit my social links right there. If you want to leave a message or start a chat, just email me or leave a 
+				note on my guestbook. I'm very willing to answer any questions about tech, guns, music and other things. Don't be afraid to reach out, I 
+				love to chat with just about anyone.
+			</p>
+		</div>
+		<hr>
+
+		<h1><u>Blinkies</u></h1>
+		<p>Thanks for reading all of that, and thank you for visiting my site. Here, take some blinkies for the road.</p>
+		<div class="Marquee" id="Marquee"></div>
 	</section>
 
 	<!--	this is another box basically, it'll either be on the right or on the bottom depending on mobile or desktop.  -->
-
+<!--
 	<section class="RightBox Border" id="RightBox"></section>
-
+-->
 </section>
 
-<!--WEBAMP-->
-<!--
-<div id="app"></div>
-<script src="https://unpkg.com/webamp"></script>
-<script>new Webamp({
-	initialTracks: [{
-		metaData: {
-			artist: "QOTSA",
-			title: "Tension Head",
-		},
-	
-	// Be careful because mp3s use up a lot of space on your account.
-		url: "https://files.catbox.moe/284e5f.mp3",
-	}],
-	
-	initialSkin: {
-		url: 
-	// Find skins https://skins.webamp.org - download them and host them on your website!
-	"https://files.catbox.moe/5itgfe.wsz"
-	},}).renderWhenReady(app);</script>
--->
 <!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
-<div class="debug">
-<!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
-<div class="debug" id="RecentPosts"></div>
-<div class="debug" id="AllPosts"></div>
-<div class="debug" id="BlogPosts"></div>
-<div class="debug" id="ShrinePosts"></div>
-<div class="debug" id="ProjectPosts"></div>
-<div class="debug" id="LibraryPosts"></div>
-<div class="debug" id="MiscPosts"></div>
-<div class="debug" id="Marquee"></div>
-<div class="debug" id="SiteTitle"></div>
-<div class="debug" id="NavbarMobile"></div>
-<div class="debug" id="NavbarDesktop"></div>
-<!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
-</div>
+<div class="debug" id="debug2"></div>
 <!--DO NOT REMOVE DEBUG IT WILL BREAK ALL JAVASCRIPT-->
 
-	<script src="/scripts.js">
-	</script>
+<script src="/scripts.js">
+</script>
 </body>	
 </html>

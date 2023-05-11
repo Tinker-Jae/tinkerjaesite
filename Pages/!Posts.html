@@ -21,27 +21,11 @@
 		<link rel="stylesheet" href="/stylesheet.css">
 	</head>
 <body>
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
-	<div class="debug">
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
-	<div class="debug" id="RecentPosts"></div>
-	<div class="debug" id="AllPosts"></div>
-	<div class="debug" id="BlogPosts"></div>
-	<div class="debug" id="ShrinePosts"></div>
-	<div class="debug" id="ProjectPosts"></div>
-	<div class="debug" id="LibraryPosts"></div>
-	<div class="debug" id="MiscPosts"></div>
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
-	</div>
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
 	<h1 class="SiteTitle" id="SiteTitle"></h1>
 <!-- this is the main container, it contains everything but the title. -->
 <section class="ContainerBox">
 	<!-- this is left box, it doesn't exist on mobile, but it does for desktop. It contains a little prof pic and the navbar for desktop.-->
-	<section class="LeftBox">
-		<img class="ProfPic Border" src="/Attachments/profpic.png">
-		<div class="NavbarDesktop Border" id="NavbarDesktop"></div>
-	</section>
+	<section class="LeftBox" id="LeftBox"></section>
 
 	<!-- this is where all the main content is stored, alongside the Mobile Navbar. -->
 	<section class="MidBox Border">
@@ -51,56 +35,16 @@
 
 		<!-- this is the main content stuff. -->
 		<h1><u>Posts</u></h1>
-		<p class="PostsBlock"> 
-		<!--PLACE NEW POSTS HERE-->
-		- <a href="/Pages/All Posts/CategoryTesting4-6-23.html">Category Testing Ground</a><br>
-		&nbsp;   Testing site for categories.<br>
-		&nbsp;   04/06/2023<br>	
-
-		- <a href="/Pages/All Posts/Changes4-5-23.html">Changes about the site?</a><br>
-		&nbsp;   Working around some changes for el site.<br>
-		&nbsp;   04/05/2023<br>	
-
-		- <a href="/Pages/All Posts/LearnedTheHardWay.html">Stuff I've learned the hard way</a><br>
-		&nbsp;   A list of things I've learned over the years.<br>
-		&nbsp;   04/04/2023<br>	
-
-		- <a href="/Pages/All Posts/Blog4-2-23.html">Silly Little Blog Post</a><br>
-		&nbsp;   A little blog about how I've been feeling.<br>
-		&nbsp;   04/02/2023<br>	
-
-		- <a href="/Pages/All Posts/V1.04Changelog.html">V1.04 Changelog</a><br>
-		&nbsp;   A changelog for v1.04.<br>
-		&nbsp;   04/02/2023<br>	
-
-		- <a href="/Pages/All Posts/V1.03Changelog.html">V1.03 Changelog</a><br>
-		&nbsp;   A changelog for v1.03.<br>
-		&nbsp;   04/01/2023<br>	
-
-		</p>
-
+		<p>This is All of my Posts. Everything across all categories.</p>
+		<div id="AllPosts" class="PostsBlock"></div>
 
 	</section>
-
-	<section class="RightBox Border">
-		<h1><u>Pic of the Day</u></h1>
-		<img class="PostImageBlock" src="https://files.catbox.moe/3q7hvi.jpg">
-		<h1><u>Recent Posts</u></h1>
-		<div class="RecentPostThing">
-		<h4><a>Example Post 1</a></h4>
-		<h4><a>Example Post 1</a></h4>	
-		<h4><a>Example Post 1</a></h4>
-		</div>
-	<!--	this is another box basically, it'll either be on the right or on the bottom depending on mobile or desktop. 
-	<section class="RightBox Border">
-		<p>
-			balls 3
-		</p>
-	</section>
-	-->
+<!--
+	<section class="RightBox Border" id="RightBox"></section>
+-->
 </section>
 
-	<script src="/scripts.js">
-	</script>
+<div class="debug" id="debug2"></div>
+<script src="/scripts.js"></script>
 </body>	
 </html>

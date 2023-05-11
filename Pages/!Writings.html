@@ -21,29 +21,11 @@
 		<link rel="stylesheet" href="/stylesheet.css">
 	</head>
 <body>
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
-	<div class="debug">
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
-	<div class="debug" id="RecentPosts"></div>
-	<div class="debug" id="AllPosts"></div>
-	<div class="debug" id="BlogPosts"></div>
-	<div class="debug" id="ShrinePosts"></div>
-	<div class="debug" id="ProjectPosts"></div>
-	<div class="debug" id="LibraryPosts"></div>
-	<div class="debug" id="MiscPosts"></div>
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
-	</div>
-	<!--DO NOT REMOVE DEBUG IT WILL BREAK THE ENTIRE POSTS SYSTEM-->
-
-
 	<h1 class="SiteTitle" id="SiteTitle"></h1>
 <!-- this is the main container, it contains everything but the title. -->
 <section class="ContainerBox">
 	<!-- this is left box, it doesn't exist on mobile, but it does for desktop. It contains a little prof pic and the navbar for desktop.-->
-	<section class="LeftBox">
-		<img class="ProfPic Border" src="/Attachments/profpic.png">
-		<div class="NavbarDesktop Border" id="NavbarDesktop"></div>
-	</section>
+	<section class="LeftBox" id="LeftBox"></section>
 
 	<!-- this is where all the main content is stored, alongside the Mobile Navbar. -->
 	<section class="MidBox Border">
@@ -52,32 +34,18 @@
 		<hr class="NavbarMobile">
 
 		<!-- this is the main content stuff. -->
-		<h1><u>Category Template</u></h1>
-		<p id="PostsTests"></p>
-
+		<h1><u>Writing</u></h1>
+		<p>Here I store my writings. Mostly creative stuff like song lyrics, stories, poems, etc.</p>
+		<p>Nothing here yet, stay tuned tho!</p>
+		<div id="WritingPosts" class="PostsBlock"></div>
 
 	</section>
-
-	<section class="RightBox Border">
-		<h1><u>Pic of the Day</u></h1>
-		<img class="PostImageBlock" src="https://files.catbox.moe/3q7hvi.jpg">
-		<h1><u>Recent Posts</u></h1>
-		<div class="RecentPostThing">
-		<h4><a>Example Post 1</a></h4>
-		<h4><a>Example Post 1</a></h4>	
-		<h4><a>Example Post 1</a></h4>
-		</div>
-	<!--	this is another box basically, it'll either be on the right or on the bottom depending on mobile or desktop. 
-	<section class="RightBox Border">
-		<p>
-			balls 3
-		</p>
-	</section>
-	-->
+<!--
+	<section class="RightBox Border" id="RightBox"></section>
+-->
 </section>
 
-	<script src="/scripts.js">
-	</script>
+<div class="debug" id="debug2"></div>
+<script src="/scripts.js"></script>
 </body>	
 </html>
-		

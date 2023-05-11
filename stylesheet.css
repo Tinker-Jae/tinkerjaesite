@@ -76,7 +76,12 @@
   height: 400px;
 }
 .PostsBlock{
-  margin: 10px 15px;
+  margin: 1% 3%;
+  font-size: 250%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  line-height: 30px;
 }
 .PostImageBlock{
   display: block;
@@ -100,8 +105,9 @@
   margin: -10% 0%;
 }
 .Marquee {
-  margin: 5% auto;
-  width: 100%;
+  margin: 0% auto;
+  margin-bottom: 3%;
+  width: 94%;
   overflow: hidden;
   white-space: normal;
   position: relative;
@@ -122,6 +128,7 @@
   margin: 0%;
   min-width: max-content;
 }
+
 @keyframes scroll-left {
   0% {
       -moz-transform: translateX(900%);
@@ -133,6 +140,21 @@
       -webkit-transform: translateX(-700%);
       transform: translateX(-700%);
   }
+}
+
+.ContactMini{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2% auto;
+  justify-content: center;
+}
+.ContactMiniList{
+  width: fit-content;
+  margin: auto 3%;
+}
+.ContactMiniText{
+  width: 65%;
+  margin: auto 4%;
 }
 /* 
 NOTE:
@@ -149,8 +171,8 @@ if you want to change to wrapped blinkies, change flex flow to nowrap.
   height: 100%;
 }
 */
-/* This is for mobile/smaller screens */
-@media only screen and (max-width: 650px) {
+/* This is for mobile/tablets */
+@media only screen and (max-width: 1000px) {
   .ContainerBox{
     display: flex;
     flex-flow: column nowrap;
@@ -172,23 +194,42 @@ if you want to change to wrapped blinkies, change flex flow to nowrap.
     width: 100%;
   }
   .RightBox{
+    display: none;
     width: 100%;
+  }
+  .AbtMeMini{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .AbtMeMini img{
+    margin: 0% 0%;
+    max-width: 450px;
+    width: 94%;
+    min-width: 280px;
+  }
+  .AbtMeMini p{
+    margin: 0% 0%;
+    width: 94%;
+    min-width: 280px;
   }
 }
 /* This is for laptops/desktops */
-@media only screen and (min-width: 651px) {
+@media only screen and (min-width: 1001px) {
   .ContainerBox{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     margin: auto;
     gap: 3%;
-    width: 75%;
+    width: 88%;
+    min-width: 760px;
 
   }
   .LeftBox{
-    width: 17%; 
-    min-width: 95px;
+    width: 12%; 
+    min-width: 141px;
     height: fit-content;
     display: flex;
     flex-flow: column nowrap;
@@ -197,12 +238,13 @@ if you want to change to wrapped blinkies, change flex flow to nowrap.
   }
   .MidBox{
     line-height: 225%;
-    width: 60%;
+    width: 85%;
     min-width: 400px;
     height: fit-content;
   }
   .RightBox{
-    width: 19%;
+    display: none;
+    width: 14%;
     height: fit-content;
   }
   .NavbarMobile{
@@ -212,4 +254,22 @@ if you want to change to wrapped blinkies, change flex flow to nowrap.
     max-width: 96%;
     max-height: 96%;
   }
+  .AbtMeMini{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .AbtMeMini img{
+    margin: 1% 2%;
+    max-width: 100%;
+    width: 30%;
+    min-width: 360px;
+  }
+  .AbtMeMini p{
+    margin: 2% 1%;
+    width: 60%;
+    min-width: 680px;
+  }
+
 }
