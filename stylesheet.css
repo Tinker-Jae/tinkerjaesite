@@ -17,7 +17,8 @@
       color: turquoise;
     }
     hr{
-      border: 1.5px solid white;
+      border: 1.75px solid white;
+      width: 100%;
     }
     h1{
       font-size: 350%;
@@ -25,43 +26,46 @@
       margin: 2%;
       padding: 0% 1.1%;
     }
+    /* h3 is reserved for navbar elements*/
+    h3{
+      font-size: 310%;
+      margin: 0px;
+      padding: 0px;
+      font-weight: 300;
+    }
+    /* h3 is reserved for navbar elements*/
     p{
       font-size: 250%;
       margin: 2%;
       padding: 0% 1.1%;
+      text-align: justify;
     }
+.debug{
+  display: none;
+}
 .marker{
   border: 7px;
   border-style: solid;
   border-color: #ff69b4;
 }
 .Border{
-  border: 5px;
-  border-radius: 5px;
+  border: 4px;
+  border-radius: 15px;
   border-style: solid;
 }
 .SiteTitle{
+  width: fit-content;
   text-align: center;
   margin: .5% auto;
   font-size: 450%; 
   font-family: "Panic";
   color: white;
+  text-decoration: none;
 }
-.MainBox{
-  margin: auto;
-  line-height: 225%;
-}
-.Navbar{
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-}
-.AboutMe{
-  display: flex;
-  margin-bottom: 20px;
+.SiteTitleLink{
+  width: min-content;
+  color: white;
+  text-decoration: none;
 }
 .BlinkiesBlock{
   display: flex;
@@ -72,48 +76,200 @@
   height: 400px;
 }
 .PostsBlock{
-  margin: 10px 15px;
+  margin: 1% 3%;
+  font-size: 250%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  line-height: 30px;
 }
 .PostImageBlock{
-  margin: auto auto;
-  margin-top: 8%;
-  margin-bottom: 5%;
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
   text-align: center;
   font-size: 28px;
 }
-@media only screen and (max-width: 650px) {
-  .MainBox{
-    width: 97%;
-    min-width: none;
-    max-width: 634px;
+.RecentPostThing{
+  margin-top: -5%;
+  margin-bottom: 11%;
+  text-align: left;
+}
+.RecentPostThing p{
+  text-align: left;
+  margin-bottom: -2%;
+  line-height: 90%;
+}
+.RecentPostThing a{
+  margin: -10% 0%;
+}
+.Marquee {
+  margin: 0% auto;
+  margin-bottom: 3%;
+  width: 94%;
+  overflow: hidden;
+  white-space: normal;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.Marquee div {
+  min-width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: fit-content;
+  -moz-animation: scroll-left 40s linear infinite;
+  -webkit-animation: scroll-left 40s linear infinite;
+  animation: scroll-left 40s linear infinite;
+}
+.Marquee img {
+  margin: 0%;
+  min-width: max-content;
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(900%);
+      -webkit-transform: translateX(900%);
+      transform: translateX(900%);
   }
-  .AboutMe{
-    flex-direction: column;
-    align-items: center;
+  100% {
+      -moz-transform: translateX(-700%);
+      -webkit-transform: translateX(-700%);
+      transform: translateX(-700%);
   }
 }
-@media only screen and (min-width: 651px) {
-  .MainBox{
-    width: 40%;
-    min-width: 615px;
-    max-width: 964px;
+
+.ContactMini{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2% auto;
+  justify-content: center;
+}
+.ContactMiniList{
+  width: fit-content;
+  margin: auto 3%;
+}
+.ContactMiniText{
+  width: 65%;
+  margin: auto 4%;
+}
+/* 
+NOTE:
+If adding or removing blinkies you MUST recalibrate 0 and 100 for keyframe scroll-left
+to change time, change the seconds in animations under .marquee div
+if you want to change to wrapped blinkies, change flex flow to nowrap.
+*/
+/*
+.NavElement{
+  font-size: 250%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+*/
+/* This is for mobile/tablets */
+@media only screen and (max-width: 1000px) {
+  .ContainerBox{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2.5%;
+    width: 90%;
+    margin: auto;
   }
-  .AboutMe{
-    flex-direction: row;
+  .LeftBox{
+    display: none;
+  }
+  .NavbarMobile{
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    gap: 9px;
-    margin-left: 20px;
   }
-  .AboutMePic{
-    order: 1;
-    margin: 0%;
-    max-width: 250px;
-    max-height: 250px;
-  }
-  .AboutMeText{
-    order: 2;
-    margin: 0%;
+  .MidBox{
+    line-height: 225%;
     width: 100%;
-    max-width: 365px;
-  } 
+  }
+  .RightBox{
+    display: none;
+    width: 100%;
+  }
+  .AbtMeMini{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .AbtMeMini img{
+    margin: 0% 0%;
+    max-width: 450px;
+    width: 94%;
+    min-width: 280px;
+  }
+  .AbtMeMini p{
+    margin: 0% 0%;
+    width: 94%;
+    min-width: 280px;
+  }
+}
+/* This is for laptops/desktops */
+@media only screen and (min-width: 1001px) {
+  .ContainerBox{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: auto;
+    gap: 3%;
+    width: 88%;
+    min-width: 760px;
+
+  }
+  .LeftBox{
+    width: 12%; 
+    min-width: 141px;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    gap: 20px;
+  }
+  .MidBox{
+    line-height: 225%;
+    width: 85%;
+    min-width: 400px;
+    height: fit-content;
+  }
+  .RightBox{
+    display: none;
+    width: 14%;
+    height: fit-content;
+  }
+  .NavbarMobile{
+    display: none;
+  }
+  .ProfPic{
+    max-width: 96%;
+    max-height: 96%;
+  }
+  .AbtMeMini{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .AbtMeMini img{
+    margin: 1% 2%;
+    max-width: 100%;
+    width: 30%;
+    min-width: 360px;
+  }
+  .AbtMeMini p{
+    margin: 2% 1%;
+    width: 60%;
+    min-width: 680px;
+  }
+
 }

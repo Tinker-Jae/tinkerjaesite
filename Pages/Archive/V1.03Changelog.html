@@ -23,12 +23,18 @@
 <body>
 
 	<h1 class="SiteTitle" id="SiteTitle"></h1>
+<!-- this is the main container, it contains everything but the title. -->
+<section class="ContainerBox">
+	<!-- this is left box, it doesn't exist on mobile, but it does for desktop. It contains a little prof pic and the navbar for desktop.-->
+	<section class="LeftBox" id="LeftBox"></section>
 
-	<section class="MainBox Border">
 
-		<p class="Navbar" id="Navbar">
-		</p>
-		<hr>
+	<!-- this is where all the main content is stored, alongside the Mobile Navbar. -->
+	<section class="MidBox Border">
+		<!-- this is the navbar for mobile -->
+		<div class="NavbarMobile" id="NavbarMobile"></div>
+		<hr class="NavbarMobile">
+
 
 		<h1><u>v1.03 Changelog</u></h1>
 
@@ -64,9 +70,12 @@
 		</p>
 
 	</section>
+<!--
+	<section class="RightBox Border" id="RightBox"></section>
+-->
+</section>
 
-	<script src="/scripts.js">
-	</script>
-
+<div class="debug" id="debug2"></div>
+<script src="/scripts.js"></script>
 </body>	
 </html>
