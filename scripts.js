@@ -102,13 +102,14 @@ document.getElementById("RightBox").innerHTML = RightBoxHTML;
 
 // This holds every single post we will ever make
 // Each Category, All, Journal, Article, Project, Writing, and Misc define the category of the post and have a subsequent array and posts variable
-//When adding new posts, change the stuff, and add the newest at the bottom.
+//When adding new posts, change the stuff, and add the newest at the bottom. 
 var postsArray = [
     {Link:"/Pages/Archive/Blog4-2-23.html", Title:"Blog Post", Description:"A blog post.", Date:"4/2/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/V1.03Changelog.html", Title:"V1.03 Changelog", Description:"Changelog for v1.03", Date:"idk",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/V1.04Changelog.html", Title:"V1.04 Changelog", Description:"Changelog for v1.04", Date:"Idk",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/CategoryTemplate.html", Title:"Category Template", Description:"Template for Categories.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/PostTemplate.html", Title:"Post Template", Description:"Template for Posts.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/v1.05Changelog.html", Title:"v1.05 Changelog", Description:"Changelog for v1.05", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
