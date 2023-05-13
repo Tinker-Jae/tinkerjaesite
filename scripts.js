@@ -111,6 +111,7 @@ var postsArray = [
     {Link:"/Pages/Archive/PostTemplate.html", Title:"Post Template", Description:"Template for Posts.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/v1.05Changelog.html", Title:"v1.05 Changelog", Description:"Changelog for v1.05", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/Blog5-11-23.html", Title:"I'm finally finished", Description:"A blog post after the v1.05 update.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog5-13-23.html", Title:"11k Views!!!", Description:"The site has hit 11k views!", Date:"5/13/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
