@@ -103,6 +103,7 @@ document.getElementById("RightBox").innerHTML = RightBoxHTML;
 // This holds every single post we will ever make
 // Each Category, All, Journal, Article, Project, Writing, and Misc define the category of the post and have a subsequent array and posts variable
 //When adding new posts, change the stuff, and add the newest at the bottom. 
+// Blog5-17-23.html
 var postsArray = [
     {Link:"/Pages/Archive/Blog4-2-23.html", Title:"Blog Post", Description:"A blog post.", Date:"4/2/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/V1.03Changelog.html", Title:"V1.03 Changelog", Description:"Changelog for v1.03", Date:"idk",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
@@ -112,6 +113,7 @@ var postsArray = [
     {Link:"/Pages/Archive/v1.05Changelog.html", Title:"v1.05 Changelog", Description:"Changelog for v1.05", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/Blog5-11-23.html", Title:"I'm finally finished", Description:"A blog post after the v1.05 update.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Blog5-13-23.html", Title:"11k Views!!!", Description:"The site has hit 11k views!", Date:"5/13/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog5-17-23.html", Title:"A thing of beauty.", Description:"Just finished Cyberpunk 2077. Wow.", Date:"5/17/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
