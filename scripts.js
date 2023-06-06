@@ -10,27 +10,27 @@ document.getElementById("ProfPic").src = ProfPicSRC;
 document.getElementById("debug2").innerHTML = debugHTML;
 
 // This controls the Navbar for Mobile Screens
-var NavbarMobileHTML = '<h3><a href="/">Home</a></h3> <h3><a href="/Pages/!Projects.html">Projects</a></h3> <h3><a href="/Pages/!Articles.html">Articles</a></h3> <h3><a href="/Pages/!Journal.html">Journal</a></h3> <h3><a href="/Pages/!Writings.html">Writings</a></h3> <h3><a href="/Pages/!Misc.html">Misc</a></h3>';
+var NavbarMobileHTML = '<h3><a href="/">Home</a></h3><h3><a href="/Pages/!Projects.html">Projects</a></h3><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3> --><h3><a href="/Pages/!Journal.html">Journal</a></h3><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
 // Here's the code for NavbarMobile
 /* 
 <h3><a href="/">Home</a></h3>
 <h3><a href="/Pages/!Projects.html">Projects</a></h3>
-<h3><a href="/Pages/!Articles.html">Articles</a></h3>
+<!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3> -->
 <h3><a href="/Pages/!Journal.html">Journal</a></h3>
-<h3><a href="/Pages/!Writings.html">Writings</a></h3>
+<!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3> -->
 <h3><a href="/Pages/!Misc.html">Misc</a></h3>
 */
 
 
 // This controls the Navbar for Desktop Screens
-var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr> <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr> <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> <h3><a href="/Pages/!Journal.html">Journal</a></h3><hr> <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> <h3><a href="/Pages/!Misc.html">Misc</a></h3>';
+var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr><h3><a href="/Pages/!Projects.html">Projects</a></h3><hr><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> --><h3><a href="/Pages/!Journal.html">Journal</a></h3><hr><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
 // Here's the code for NavbarDesktop
 /*
 <h3><a href="/">Home</a></h3><hr>
 <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr>
-<h3><a href="/Pages/!Articles.html">Articles</a></h3><hr>
+<!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> -->
 <h3><a href="/Pages/!Journal.html">Journal</a></h3><hr>
-<h3><a href="/Pages/!Writings.html">Writings</a></h3><hr>
+<!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> -->
 <h3><a href="/Pages/!Misc.html">Misc</a></h3>
 */
 
@@ -113,7 +113,7 @@ var postsArray = [
     {Link:"/Pages/Archive/v1.05Changelog.html", Title:"v1.05 Changelog", Description:"Changelog for v1.05", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/Blog5-11-23.html", Title:"I'm finally finished", Description:"A blog post after the v1.05 update.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Blog5-13-23.html", Title:"11k Views!!!", Description:"The site has hit 11k views!", Date:"5/13/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
-    {Link:"/Pages/Archive/Blog5-17-23.html", Title:"A thing of beauty.", Description:"Just finished Cyberpunk 2077. Wow.", Date:"5/17/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog5-27-23.html", Title:"Blog title lol", Description:"", Date:"5/27/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
