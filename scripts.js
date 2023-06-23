@@ -23,13 +23,15 @@ var NavbarMobileHTML = '<h3><a href="/">Home</a></h3><h3><a href="/Pages/!Projec
 
 
 // This controls the Navbar for Desktop Screens
-var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr><h3><a href="/Pages/!Projects.html">Projects</a></h3><hr><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> --><h3><a href="/Pages/!Journal.html">Journal</a></h3><hr><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
+var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr><!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3><hr> --><h3><a href="/Pages/!Posts.html">Posts</a></h3><hr><!-- <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr> --><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> --><!-- <h3><a href="/Pages/!Journal.html">Journal</a></h3><hr> --><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
 // Here's the code for NavbarDesktop
 /*
 <h3><a href="/">Home</a></h3><hr>
-<h3><a href="/Pages/!Projects.html">Projects</a></h3><hr>
+<!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3><hr> -->
+<h3><a href="/Pages/!Posts.html">Posts</a></h3><hr>
+<!-- <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr> -->
 <!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> -->
-<h3><a href="/Pages/!Journal.html">Journal</a></h3><hr>
+<!-- <h3><a href="/Pages/!Journal.html">Journal</a></h3><hr> -->
 <!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> -->
 <h3><a href="/Pages/!Misc.html">Misc</a></h3>
 */
