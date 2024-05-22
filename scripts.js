@@ -10,15 +10,10 @@ document.getElementById("ProfPic").src = ProfPicSRC;
 document.getElementById("debug2").innerHTML = debugHTML;
 
 // This controls the Navbar for Mobile Screens
-var NavbarMobileHTML = '<h3><a href="/">Home</a></h3><h3><a href="/Pages/!Projects.html">Projects</a></h3><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3> --><h3><a href="/Pages/!Journal.html">Journal</a></h3><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
+var NavbarMobileHTML = '<h3><a href="/">Home</a></h3><!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3> --><h3><a href="/Pages/!Posts.html">Posts</a></h3><!-- <h3><a href="/Pages/!Projects.html">Projects</a></h3> --><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3> --><!-- <h3><a href="/Pages/!Journal.html">Journal</a></h3> --><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
 // Here's the code for NavbarMobile
 /* 
-<h3><a href="/">Home</a></h3>
-<h3><a href="/Pages/!Projects.html">Projects</a></h3>
-<!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3> -->
-<h3><a href="/Pages/!Journal.html">Journal</a></h3>
-<!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3> -->
-<h3><a href="/Pages/!Misc.html">Misc</a></h3>
+<h3><a href="/">Home</a></h3><!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3> --><h3><a href="/Pages/!Posts.html">Posts</a></h3><!-- <h3><a href="/Pages/!Projects.html">Projects</a></h3> --><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3> --><!-- <h3><a href="/Pages/!Journal.html">Journal</a></h3> --><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>
 */
 
 
@@ -106,16 +101,23 @@ document.getElementById("RightBox").innerHTML = RightBoxHTML;
 // Each Category, All, Journal, Article, Project, Writing, and Misc define the category of the post and have a subsequent array and posts variable
 //When adding new posts, change the stuff, and add the newest at the bottom. 
 // Blog5-17-23.html
+// Current Tags:
+// Blog, Philosophy, Changelog, Misc, Music, Vent, Site Updates, Life Updates, Thinking Out Loud, Audio Log, Project Stuff, Announcement, APC, Project Updates, Techie Stuff, Feelings
 var postsArray = [
-    {Link:"/Pages/Archive/Blog4-2-23.html", Title:"Blog Post", Description:"A blog post.", Date:"4/2/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
-    {Link:"/Pages/Archive/V1.03Changelog.html", Title:"V1.03 Changelog", Description:"Changelog for v1.03", Date:"idk",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
-    {Link:"/Pages/Archive/V1.04Changelog.html", Title:"V1.04 Changelog", Description:"Changelog for v1.04", Date:"Idk",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
-    {Link:"/Pages/Archive/CategoryTemplate.html", Title:"Category Template", Description:"Template for Categories.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
-    {Link:"/Pages/Archive/PostTemplate.html", Title:"Post Template", Description:"Template for Posts.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
-    {Link:"/Pages/Archive/v1.05Changelog.html", Title:"v1.05 Changelog", Description:"Changelog for v1.05", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
-    {Link:"/Pages/Archive/Blog5-11-23.html", Title:"I'm finally finished", Description:"A blog post after the v1.05 update.", Date:"5/11/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
-    {Link:"/Pages/Archive/Blog5-13-23.html", Title:"11k Views!!!", Description:"The site has hit 11k views!", Date:"5/13/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
-    {Link:"/Pages/Archive/Blog6-12-23.html", Title:"A little update, also me overthinking.", Description:"Updates and me overthinking and stuff.", Date:"6/12/23",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog4-2-23.html", Title:"Blog Post", Description:"A blog post.", Date:"4/2/23",  Tags:"Blog, Vent, Philosophy, Life Updates",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/V1.03Changelog.html", Title:"V1.03 Changelog", Description:"Changelog for v1.03", Date:"idk",  Tags:"Site Updates, Changelog",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/V1.04Changelog.html", Title:"V1.04 Changelog", Description:"Changelog for v1.04", Date:"Idk",  Tags:"Site Updates, Changelog",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/CategoryTemplate.html", Title:"Category Template", Description:"Template for Categories.", Date:"5/11/23",  Tags:"Misc",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/PostTemplate.html", Title:"Post Template", Description:"Template for Posts.", Date:"5/11/23",  Tags:"Misc",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/v1.05Changelog.html", Title:"v1.05 Changelog", Description:"Changelog for v1.05", Date:"5/11/23",  Tags:"Site Updates, Changelog",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/Blog5-11-23.html", Title:"I'm finally finished", Description:"A blog post after the v1.05 update.", Date:"5/11/23",  Tags:"Blog, Site Updates, Vent",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog5-13-23.html", Title:"11k Views!!!", Description:"The site has hit 11k views!", Date:"5/13/23",  Tags:"Blog, Site Updates",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog6-12-23.html", Title:"A little update, also me overthinking.", Description:"Updates and me overthinking and stuff.", Date:"6/12/23", Tags:"Blog, Vent, Philosophy, Life Updates",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog6-23-23.html", Title:"A little update, also me overthinking. The sequel!", Description:"Like the post before, but different.", Date:"6/23/23", Tags:"Blog, Philosophy, Life Updates, Audio Log",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog6-26-23.html", Title:"Bro imma be real I just be talkin.", Description:"Me rambling about creating stuff and realizing that I just gotta talk about it and move on. (GONE WILD GONE SEXUAL!?!??!?!?!)", Date:"6/26/23", Tags:"Blog, Thinking Out Loud, Audio Log",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog7-12-23.html", Title:"Hii! What's up y'all!", Description:"New Schedule, Stuff going on, also a project!", Date:"7/12/23", Tags:"Blog, Thinking Out Loud, Site Updates",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog7-27-23.html", Title:"An Update on the APC!", Description:"The APC v0.1 is here!", Date:"7/27/23", Tags:"Blog, Project Updates, Techie Stuff, APC",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog8-16-23.html", Title:" Doing rough, and shoutout Tulip!", Description:"A vent post abt mental health and college n' stuff. Also shoutout Tulip!", Date:"8/16/23", Tags:"Blog, Life Updates, Feelings",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
@@ -123,7 +125,7 @@ var postsArray = [
 // this adds tags to make our post readable.
 // it takes the data from postsArray, and adds it to the post template that appears on each page.
 function formattingFunction(a){
-    return ("<div><a href='"+a.Link+"'>"+a.Title+"</a> ("+a.Date+")<br> "+a.Description+"<br></div>");
+    return ("<div><a href='"+a.Link+"'>"+a.Title+"</a>("+a.Date+") <br>"+a.Description+" <br>Tags: "+a.Tags+"</div>");
 }
 
 // this adds tags for recent posts, h4 being the recent post tag.
