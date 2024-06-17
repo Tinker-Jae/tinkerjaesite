@@ -40,6 +40,12 @@
       padding: 0% 1.1%;
       text-align: justify;
     }
+    ul{
+      font-size: 250%;
+      margin: 2%;
+      padding: 0% 1.1%;
+      text-align: justify;
+    }
 .debug{
   display: none;
 }

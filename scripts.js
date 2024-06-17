@@ -18,15 +18,15 @@ var NavbarMobileHTML = '<h3><a href="/">Home</a></h3><!-- <h3><a href="/Pages/!C
 
 
 // This controls the Navbar for Desktop Screens
-var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr><!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3><hr> --><h3><a href="/Pages/!Posts.html">Posts</a></h3><hr><!-- <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr> --><!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> --><!-- <h3><a href="/Pages/!Journal.html">Journal</a></h3><hr> --><!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> --><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
+var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr> <!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3><hr> --> <!-- <h3><a href="/Pages/!Posts.html">Posts</a></h3><hr> --> <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr> <!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> --> <h3><a href="/Pages/!Journal.html">Blog</a></h3><hr> <!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> --> <h3><a href="/Pages/!Misc.html">Misc</a></h3>';
 // Here's the code for NavbarDesktop
 /*
 <h3><a href="/">Home</a></h3><hr>
 <!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3><hr> -->
-<h3><a href="/Pages/!Posts.html">Posts</a></h3><hr>
-<!-- <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr> -->
+<!-- <h3><a href="/Pages/!Posts.html">Posts</a></h3><hr> -->
+<h3><a href="/Pages/!Projects.html">Projects</a></h3><hr>
 <!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> -->
-<!-- <h3><a href="/Pages/!Journal.html">Journal</a></h3><hr> -->
+<h3><a href="/Pages/!Journal.html">Blog</a></h3><hr>
 <!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> -->
 <h3><a href="/Pages/!Misc.html">Misc</a></h3>
 */
@@ -116,8 +116,9 @@ var postsArray = [
     {Link:"/Pages/Archive/Blog6-23-23.html", Title:"A little update, also me overthinking. The sequel!", Description:"Like the post before, but different.", Date:"6/23/23", Tags:"Blog, Philosophy, Life Updates, Audio Log",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Blog6-26-23.html", Title:"Bro imma be real I just be talkin.", Description:"Me rambling about creating stuff and realizing that I just gotta talk about it and move on. (GONE WILD GONE SEXUAL!?!??!?!?!)", Date:"6/26/23", Tags:"Blog, Thinking Out Loud, Audio Log",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Blog7-12-23.html", Title:"Hii! What's up y'all!", Description:"New Schedule, Stuff going on, also a project!", Date:"7/12/23", Tags:"Blog, Thinking Out Loud, Site Updates",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
-    {Link:"/Pages/Archive/Blog7-27-23.html", Title:"An Update on the APC!", Description:"The APC v0.1 is here!", Date:"7/27/23", Tags:"Blog, Project Updates, Techie Stuff, APC",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
-    {Link:"/Pages/Archive/Blog8-16-23.html", Title:" Doing rough, and shoutout Tulip!", Description:"A vent post abt mental health and college n' stuff. Also shoutout Tulip!", Date:"8/16/23", Tags:"Blog, Life Updates, Feelings",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog7-27-23.html", Title:"An Update on the APC!", Description:"The APC v0.1 is here!", Date:"7/27/23", Tags:"Blog, Project Updates, Techie Stuff, APC",  All:true, Project:true, Article:false, Journal:false, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog8-16-23.html", Title:"Doing rough, and shoutout Tulip!", Description:"A vent post abt mental health and college n' stuff. Also shoutout Tulip!", Date:"8/16/23", Tags:"Blog, Life Updates, Feelings",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/AboutMe.html", Title:"About Me", Description:"All about me, Jae, the Webmaster!", Date:"6/13/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:true},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
@@ -125,7 +126,7 @@ var postsArray = [
 // this adds tags to make our post readable.
 // it takes the data from postsArray, and adds it to the post template that appears on each page.
 function formattingFunction(a){
-    return ("<div><a href='"+a.Link+"'>"+a.Title+"</a>("+a.Date+") <br>"+a.Description+" <br>Tags: "+a.Tags+"</div>");
+    return ("<div><a href='"+a.Link+"'>"+a.Title+"</a>("+a.Date+") <br>"+a.Description+" <!--<br>Tags: "+a.Tags+"--> </div>");
 }
 
 // this adds tags for recent posts, h4 being the recent post tag.
