@@ -277,5 +277,10 @@ if you want to change to wrapped blinkies, change flex flow to nowrap.
     width: 60%;
     min-width: 680px;
   }
-
+  .MakerWebring{
+    font-size: 250%;
+    margin: 2%;
+    padding: 0% 1.1%;
+    text-align: justify;
+  }
 }
