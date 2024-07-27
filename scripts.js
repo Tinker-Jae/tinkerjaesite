@@ -120,6 +120,7 @@ var postsArray = [
     {Link:"/Pages/Archive/Blog8-16-23.html", Title:"Doing rough, and shoutout Tulip!", Description:"A vent post abt mental health and college n' stuff. Also shoutout Tulip!", Date:"8/16/23", Tags:"Blog, Life Updates, Feelings",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/AboutMe.html", Title:"About Me", Description:"All about me, Jae, the Webmaster!", Date:"6/13/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:true},
     {Link:"/Pages/Archive/Blog6-20-24.html", Title:"This just in, reading isn't that bad!", Description:"I finished a book!!!", Date:"6/21/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/TinkerJaeBlinkie.html", Title:"My Blinkie!", Description:"This just in, I made a blinkie!", Date:"7/27/24", Tags:"",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
