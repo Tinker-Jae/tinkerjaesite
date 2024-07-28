@@ -18,16 +18,14 @@ var NavbarMobileHTML = '<h3><a href="/">Home</a></h3><!-- <h3><a href="/Pages/!C
 
 
 // This controls the Navbar for Desktop Screens
-var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr> <!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3><hr> --> <!-- <h3><a href="/Pages/!Posts.html">Posts</a></h3><hr> --> <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr> <!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> --> <h3><a href="/Pages/!Journal.html">Blog</a></h3><hr> <!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> --> <h3><a href="/Pages/!Misc.html">Misc</a></h3>';
+var NavbarDesktopHTML = '<h3><a href="/">Home</a></h3><hr><h3><a href="/Pages/Archive/About.html">About</a></h3><hr><h3><a href="/Pages/!Projects.html">Projects</a></h3><hr><h3><a href="/Pages/!Articles.html">Articles</a></h3><hr><h3><a href="/Pages/!Journal.html">Blog</a></h3><hr><h3><a href="/Pages/!Misc.html">Misc</a></h3>';
 // Here's the code for NavbarDesktop
 /*
 <h3><a href="/">Home</a></h3><hr>
-<!-- <h3><a href="/Pages/!Categories.html">Categories</a></h3><hr> -->
-<!-- <h3><a href="/Pages/!Posts.html">Posts</a></h3><hr> -->
+<h3><a href="/Pages/Archive/About.html">About</a></h3><hr>
 <h3><a href="/Pages/!Projects.html">Projects</a></h3><hr>
-<!-- <h3><a href="/Pages/!Articles.html">Articles</a></h3><hr> -->
+<h3><a href="/Pages/!Articles.html">Articles</a></h3><hr>
 <h3><a href="/Pages/!Journal.html">Blog</a></h3><hr>
-<!-- <h3><a href="/Pages/!Writings.html">Writings</a></h3><hr> -->
 <h3><a href="/Pages/!Misc.html">Misc</a></h3>
 */
 
@@ -89,13 +87,9 @@ document.getElementById("Marquee").innerHTML = MarqueeHTML;
 // This links the RightBox on your page to the RightBox Variable
 document.getElementById("RightBox").innerHTML = RightBoxHTML;
 
-
-
-
 //THIS IS ALL FOR THE POSTS ARRAY
 //THIS IS ALL FOR THE POSTS ARRAY
 //THIS IS ALL FOR THE POSTS ARRAY
-
 
 // This holds every single post we will ever make
 // Each Category, All, Journal, Article, Project, Writing, and Misc define the category of the post and have a subsequent array and posts variable
@@ -118,9 +112,10 @@ var postsArray = [
     {Link:"/Pages/Archive/Blog7-12-23.html", Title:"Hii! What's up y'all!", Description:"New Schedule, Stuff going on, also a project!", Date:"7/12/23", Tags:"Blog, Thinking Out Loud, Site Updates",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Blog7-27-23.html", Title:"An Update on the APC!", Description:"The APC v0.1 is here!", Date:"7/27/23", Tags:"Blog, Project Updates, Techie Stuff, APC",  All:true, Project:true, Article:false, Journal:false, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Blog8-16-23.html", Title:"Doing rough, and shoutout Tulip!", Description:"A vent post abt mental health and college n' stuff. Also shoutout Tulip!", Date:"8/16/23", Tags:"Blog, Life Updates, Feelings",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
-    {Link:"/Pages/Archive/AboutMe.html", Title:"About Me", Description:"All about me, Jae, the Webmaster!", Date:"6/13/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/About.html", Title:"About", Description:"All about me, Jae, the Webmaster!", Date:"6/13/24", Tags:"",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Blog6-20-24.html", Title:"This just in, reading isn't that bad!", Description:"I finished a book!!!", Date:"6/21/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/TinkerJaeBlinkie.html", Title:"My Blinkie!", Description:"This just in, I made a blinkie!", Date:"7/27/24", Tags:"",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
+    {Link:"/Pages/Archive/Blog7-27-24.html", Title:"Monetization is bullshit!", Description:"A blog/article on why monetization is, in my opinion, bullshit.", Date:"7/27/24", Tags:"",  All:true, Project:false, Article:true, Journal:false, Writing:false, Misc:false},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
