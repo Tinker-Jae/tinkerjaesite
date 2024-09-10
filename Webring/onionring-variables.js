@@ -10,7 +10,7 @@ var sites = [
 'https://tinkerjae.neocities.org/',
 'https://gusbus.space/',
 'http://lofi.mariteaux.somnolescent.net/contact/',
-'https://kupei.neocities.org/',
+'https://raccoonbutt.com/',
 'https://ralphsdigitalrecord.neocities.org/'
 ];
 

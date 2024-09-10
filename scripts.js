@@ -50,7 +50,7 @@ var MarqueeHTML = '<div><img src="/Attachments/Blinkies/0142-virusgender.gif"></
 <div><img src="https://files.catbox.moe/hwsop4.gif"></div>  
 */
 
-var ProfPicSRC = '/Attachments/profpic.png';
+var ProfPicSRC = 'https://files.catbox.moe/o2hqdb.jpg';
 
 // Code for the LeftBox since it's the same on all pages.
 var LeftBoxHTML = '<img class="ProfPic Border" id="ProfPic"> <div class="NavbarDesktop Border" id="NavbarDesktop"></div>';
