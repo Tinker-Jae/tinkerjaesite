@@ -116,6 +116,8 @@ var postsArray = [
     {Link:"/Pages/Archive/Blog6-20-24.html", Title:"This just in, reading isn't that bad!", Description:"I finished a book!!!", Date:"6/21/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/TinkerJaeBlinkie.html", Title:"My Blinkie!", Description:"This just in, I made a blinkie!", Date:"7/27/24", Tags:"",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/Blog7-27-24.html", Title:"Monetization is bullshit!", Description:"A blog/article on why monetization is, in my opinion, bullshit.", Date:"7/27/24", Tags:"",  All:true, Project:false, Article:true, Journal:false, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog1+9-11-24.html", Title:"A Presentation on Anarchism", Description:"Sorry it's been a while, here's something small.", Date:"9/11/24", Tags:"",  All:true, Project:true, Article:false, Journal:false, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog2+9-11-24.html", Title:"A quick update 😜", Description:"Been super busy y'all omg, projects will arrive relatively soon I swearsies.", Date:"9/11/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
