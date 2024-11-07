@@ -137,7 +137,6 @@
   margin: 0%;
   min-width: max-content;
 }
-
 @keyframes scroll-left {
   0% {
       -moz-transform: translateX(900%);
@@ -150,7 +149,6 @@
       transform: translateX(-700%);
   }
 }
-
 .ContactMini{
   display: flex;
   flex-flow: row wrap;
