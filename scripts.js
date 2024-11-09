@@ -120,6 +120,7 @@ var postsArray = [
     {Link:"/Pages/Archive/Blog-9-11-24-2.html", Title:"A quick update 😜", Description:"Been super busy y'all omg, projects will arrive relatively soon I swearsies.", Date:"9/11/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
     {Link:"/Pages/Archive/Free-Ideas.html", Title:"Free Ideas", Description:"What it says on the tin. Also date should indicate the date last updated.", Date:"11/7/24", Tags:"",  All:true, Project:false, Article:false, Journal:false, Writing:false, Misc:true},
     {Link:"/Pages/Archive/Blog-11-7-24-1.html", Title:"PLACEHOLDER", Description:"Erm what the sigma", Date:"11/7/24", Tags:"",  All:true, Project:true, Article:false, Journal:false, Writing:false, Misc:false},
+    {Link:"/Pages/Archive/Blog-11-9-24-1.html", Title:"Epiphany on motivation and hard work.", Description:"Just a big yap sesh and thoughts I had on hard work and long term happiness.", Date:"11/9/24", Tags:"",  All:true, Project:false, Article:false, Journal:true, Writing:false, Misc:false},
 
     // ADD NEW POST HERE^^^^^^^^^^^^^
 ];
