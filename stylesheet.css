@@ -39,6 +39,7 @@
       margin: 2%;
       padding: 0% 1.1%;
       text-align: justify;
+      background-color: rgba(0, 8, 20, .40);
     }
     ol{
       font-size: 250%;
